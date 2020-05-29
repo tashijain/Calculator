@@ -14,33 +14,34 @@
     <body>
         <h1>Basic Calculator</h1>
         <br/>
-        <!-- <form id="myform" name="Calc"></form> -->
+        <form id="myform" name="calc">
         <!-- <div> -->
         <input name="display" id="input-field">
         <br/>
 
-        <input type=button value="0">
-        <input type=button value="1">
-        <input type=button value="2">
-        <input type=button id ="plus" value="+">
+        <input type=button value="0" OnClick="calc.display.value+='0'">
+        <input type=button value="1" OnClick="calc.display.value+='1'">
+        <input type=button value="2" OnClick="calc.display.value+='2'">
+        <input type=button id ="plus" value="+" OnClick="calc.display.value+='+'">
         <br/>
 
-        <input type=button value="3">
-        <input type=button value="4">
-        <input type=button value="5">
-        <input type=button id="minus" value="-">
+        <input type=button value="3" OnClick="calc.display.value+='3'">
+        <input type=button value="4" OnClick="calc.display.value+='4'">
+        <input type=button value="5" OnClick="calc.display.value+='5'">
+        <input type=button id="minus" value="-" OnClick="calc.display.value+='-'">
         <br/>
 
-        <input type=button value="6">
-        <input type=button value="7">
-        <input type=button value="8">
-        <input type=button id="multiply" value="x">
+        <input type=button value="6" OnClick="calc.display.value+='6'">
+        <input type=button value="7" OnClick="calc.display.value+='7'">
+        <input type=button value="8" OnClick="calc.display.value+='8'">
+        <input type=button id="multiply" value="x" OnClick="calc.display.value+='*'">
         <br/>
 
-        <input type=button value="9">
-        <input type=button id="clear" value="C">
-        <input type=button value="=">
-        <input type=button id="divide" value="&#247;">
+        <input type=button value="9" OnClick="calc.display.value+='9'">
+        <input type=button id="clear" value="C" OnClick="calc.display.value=''">
+        <input type=button value="=" OnClick="calc.display.value=eval(calc.display.value)">
+        <input type=button id="divide" value="&#247;" OnClick="calc.display.value+='/'">
         <!-- </div> -->
+        </form>
     </body>
 </html>

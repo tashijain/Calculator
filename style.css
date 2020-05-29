@@ -16,10 +16,10 @@ input {
     background-color: #1f80c9;
 }
 
-/* #myform{
+#myform{
     margin-left:225px;
-    margin-top: 20px;
-} */
+    margin-top: 10px;
+}
 
 h1 {
     text-align: center;
